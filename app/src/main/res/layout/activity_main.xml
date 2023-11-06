@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_background_color">
+
+    <FrameLayout
+        android:id="@+id/id_fragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom_bar_parent"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEst"/>
+
+    <LinearLayout
+        android:id="@+id/id_bottom_bar_parent"
+        android:layout_alignParentBottom="true"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/second_background_color">
+
+        <LinearLayout
+            android:id="@+id/id_bottom_bar_effect_parent"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/id_bottom_bar_effect_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/round_palette_black_24"/>
+            <TextView
+                android:id="@+id/id_bottom_bar_effect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/main_text_color"
+                android:text="效果"/>
+        </LinearLayout>
+
+        <com.shark.dynamics.music.ui.BottomPlayView
+            android:id="@+id/id_play_view_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:id="@+id/id_bottom_bar_music_parent"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/id_bottom_bar_music_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/round_music_note_black_24"/>
+            <TextView
+                android:id="@+id/id_bottom_bar_music_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/main_text_color"
+                android:text="音乐"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+package com.shark.dynamics.graphics.renderer.visualizer;
+
+import com.shark.dynamics.graphics.Director;
+import com.shark.dynamics.graphics.renderer.bars.DoubleLineCircle;
+import com.shark.dynamics.graphics.renderer.bars.SecondOrderBezierCircle;
+import com.shark.dynamics.graphics.renderer.r2d.Sprite;
+import com.shark.dynamics.graphics.renderer.r2d.particlesystem.ParticleSystem;
+import com.shark.dynamics.graphics.renderer.r2d.particlesystem.ParticleType;
+import com.shark.dynamics.graphics.renderer.texture.Image;
+import com.shark.dynamics.graphics.renderer.texture.Texture;
+
+import org.joml.Vector2f;
+import org.joml.Vector3f;
+import org.opencv.core.Size;
+
+public class GLDoubleLineCircle extends IGLVisualizer {
+
+    private DoubleLineCircle mSmoothCircle;
+    private Sprite mBackground;
+    private Sprite mCenterImage;
+    private Vector2f mCenter;
+    private float mCenterImageRotate;
+
+    private ParticleSystem mParticleSystem;
+
+    public GLDoubleLineCircle() {
+        Image image = Director.getInstance().getImageLoader().loadFromAssets("images/background_star.jpg", true, new Size(0.5f, 0.5f), 10);
+        Texture texture = new Texture(image);
+        mBackground = new Sprite(texture, Sprite.SpriteType.kRect,
+                Director.getInstance().loaderShaderFromAssets("shader/base_2d_vs.glsl"),
+                Director.getInstance().loaderShaderFromAssets("shader/texture_2d/tex_enhance_fs.glsl"));
+        mBackground.setAsBackground();
+
+        mCenterImage = new Sprite("images/oh_lonely.jpg", Sprite.SpriteType.kCircle);
+        Vector2f sc = Director.getInstance().getDevice().getScreenRealSize();
+        mCenterImage.scaleTo(0.55f, 0.55f, 0.0f);
+        mCenterImage.translateTo(sc.x/2 - mCenterImage.getWidth()/2, sc.y/2 - mCenterImage.getHeight()/2, 0);
+        mCenter = new Vector2f(sc.x/2, sc.y/2);
+
+        mSmoothCircle = new DoubleLineCircle(mCenter, mCenterImage.getWidth()/2+50);
+        mBarsRenderer = mSmoothCircle;
+
+        mParticleSystem = new ParticleSystem("images/bubble.png");
+        mParticleSystem.setParticleType(ParticleType.kBubble);
+        mParticleSystem.setGenDuration(500);
+        mParticleSystem.setGenParticleCount(1);
+        mParticleSystem.setColorOverlay(true);
+        mParticleSystem.setTintColor(new Vector3f(1,1,1));
+    }
+
+    @Override
+    public void render(float delta) {
+        super.render(delta);
+        mBackground.getShader().use();
+        mBackground.getShader().setUniformFloat("enhance", 0.3f);
+        mBackground.render(delta);
+
+        mParticleSystem.render(delta);
+
+        mCenterImageRotate -= delta * 12;
+        mCenterImage.rotateTo(mCenterImageRotate, 0, 0, 1);
+        mCenterImage.render(delta);
+
+        mSmoothCircle.render(delta);
+    }
+}

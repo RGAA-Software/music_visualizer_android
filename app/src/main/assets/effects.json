@@ -1,0 +1,208 @@
+{
+  "version": "1.0.0",
+  "effects": [
+    {
+      "name": "GL3DFeatureImpl",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GL3DFeatureImpl",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLShaderIt",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLShaderIt",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLFogForest",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLFogForest",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLShadow",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLShadow",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLEarth",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLEarth",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLSnowDeer",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLSnowDeer",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLMatrix",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLMatrix",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLExploreUniverse",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLExploreUniverse",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLCircleCube",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLCircleCube",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLGridCircleBars",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer3D.GLGridCircleBars",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLFeatureImpl",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLFeatureImpl",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "SplitBars",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalSplitBars",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "Thunder",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLThunder",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "Circle Region",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLCircleRegion",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "Universe Ash",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLUniverseAsh",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "Double Line",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLDoubleLineCircle",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "Smooth Circle",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLBezierCircleLine",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "Flower Circle",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLFlowerCircle",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLLonelyPlanet",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLLonelyPlanet",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLDancingDots",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLDancingDots",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalBars",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": false
+    },
+    {
+      "name": "",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLCircleBars",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": false
+    },
+    {
+      "name": "GLVerticalBarsInstance",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalBarsInstance",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLCircleBarsInstance",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLCircleBarsInstance",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLVerticalRegion",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalRegion",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLVerticalBarsTexture",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalBarsTexture",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLCircleBarsTexture",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLCircleBarsTexture",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLVerticalBarsBlend",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalBarsBlend",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    },
+    {
+      "name": "GLVerticalBarsPeeling",
+      "clazz": "com.shark.dynamics.graphics.renderer.visualizer.GLVerticalBarsPeeling",
+      "location": "assets",
+      "cover": "effect_cover/default_cover.jpg",
+      "visibility": true
+    }
+  ]
+}

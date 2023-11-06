@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Theme.SharkMusic" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/main_color</item>-->
+<!--        <item name="colorPrimaryVariant">@color/main_color</item>-->
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/second_color</item>-->
+<!--        <item name="colorSecondaryVariant">@color/second_color</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">@color/main_background_color</item>-->
+<!--        <item name="android:navigationBarColor" tools:targetApi="l">@color/main_background_color </item>-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--    </style>-->
+
+    <!-- Base application theme. -->
+    <style name="Theme.SharkMusic.Normal" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/main_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/second_color</item>
+        <item name="colorSecondaryVariant">@color/second_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/main_background_color</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/second_background_color </item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.SharkMusic.TransparentStatus" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/main_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/second_color</item>
+        <item name="colorSecondaryVariant">@color/second_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#0000</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/second_background_color </item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qmuiteam.qmui.layout.QMUIRelativeLayout
+        android:id="@+id/id_bottom_bar_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="6dp"
+        app:qmui_radius="5dp"
+        app:qmui_shadowAlpha="0.5"
+        app:qmui_shadowElevation="2dp">
+
+        <ImageView
+            android:id="@+id/id_wallpaper_cover"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/default_cover"/>
+
+        <TextView
+            android:id="@+id/id_wallpaper_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="相思断肠红"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#222"
+            android:background="#cccc"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true" />
+
+
+    </com.qmuiteam.qmui.layout.QMUIRelativeLayout>
+
+</RelativeLayout>
